@@ -18,7 +18,7 @@ LABEL environment="production"
 # Set workdir on current image
 WORKDIR /app
 # Leverage a separate non-root user for the application
-RUN adduser -S -D -H -h /app appuser
+RUN adduser -S -D -H -h /app training
 # Change to a non-root user
 USER appuser
 # Add artifact from builder stage
